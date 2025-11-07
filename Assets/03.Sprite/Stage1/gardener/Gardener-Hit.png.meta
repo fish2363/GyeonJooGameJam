@@ -1,0 +1,829 @@
+fileFormatVersion: 2
+guid: 3111e38b0b3f0384a86091c39f097b0f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3665228025691125506
+    second: Gardener-Hit_0
+  - first:
+      213: -6409005294826077319
+    second: Gardener-Hit_1
+  - first:
+      213: -2109879922797266716
+    second: Gardener-Hit_2
+  - first:
+      213: -1932307058965292128
+    second: Gardener-Hit_3
+  - first:
+      213: 1176964801401040986
+    second: Gardener-Hit_4
+  - first:
+      213: 8379103551525839251
+    second: Gardener-Hit_5
+  - first:
+      213: 6233631064041072827
+    second: Gardener-Hit_6
+  - first:
+      213: 4251440623835429743
+    second: Gardener-Hit_7
+  - first:
+      213: -8089341409131731653
+    second: Gardener-Hit_8
+  - first:
+      213: 3369576756964072189
+    second: Gardener-Hit_9
+  - first:
+      213: 8122762680731887609
+    second: Gardener-Hit_10
+  - first:
+      213: -462446122248977995
+    second: Gardener-Hit_11
+  - first:
+      213: 4793156878462610853
+    second: Gardener-Hit_12
+  - first:
+      213: 7837042093678833418
+    second: Gardener-Hit_13
+  - first:
+      213: 1586088925642389128
+    second: Gardener-Hit_14
+  - first:
+      213: 7090963367900151227
+    second: Gardener-Hit_15
+  - first:
+      213: 4415484275086335211
+    second: Gardener-Hit_16
+  - first:
+      213: -2779221518657707727
+    second: Gardener-Hit_17
+  - first:
+      213: -4143707652526263803
+    second: Gardener-Hit_18
+  - first:
+      213: -4868775158236446359
+    second: Gardener-Hit_19
+  - first:
+      213: 5503459075102128171
+    second: Gardener-Hit_20
+  - first:
+      213: 1808468415783383325
+    second: Gardener-Hit_21
+  - first:
+      213: -8815152082479617798
+    second: Gardener-Hit_22
+  - first:
+      213: 576647074139780190
+    second: Gardener-Hit_23
+  - first:
+      213: -1699400879793288180
+    second: Gardener-Hit_24
+  - first:
+      213: -1935505715754615644
+    second: Gardener-Hit_25
+  - first:
+      213: -5397726483161471941
+    second: Gardener-Hit_26
+  - first:
+      213: -4948918720034525295
+    second: Gardener-Hit_27
+  - first:
+      213: 7860917272631066899
+    second: Gardener-Hit_28
+  - first:
+      213: 715784687848289881
+    second: Gardener-Hit_29
+  - first:
+      213: -8844975360183832114
+    second: Gardener-Hit_30
+  - first:
+      213: -5169360858334939734
+    second: Gardener-Hit_31
+  - first:
+      213: 791671944796995789
+    second: Gardener-Hit_32
+  - first:
+      213: -847446557921076808
+    second: Gardener-Hit_33
+  - first:
+      213: 6948239551955436440
+    second: Gardener-Hit_34
+  - first:
+      213: -2696908022684927722
+    second: Gardener-Hit_35
+  - first:
+      213: -5832965188579013348
+    second: Gardener-Hit_36
+  - first:
+      213: -2522215403898829420
+    second: Gardener-Hit_37
+  - first:
+      213: 575677594024696607
+    second: Gardener-Hit_38
+  - first:
+      213: 9143417239511415908
+    second: Gardener-Hit_39
+  - first:
+      213: -27166788327648934
+    second: Gardener-Hit_40
+  - first:
+      213: 3868826754499504637
+    second: Gardener-Hit_41
+  - first:
+      213: -8692966641928005277
+    second: Gardener-Hit_42
+  - first:
+      213: 73909211881630347
+    second: Gardener-Hit_43
+  - first:
+      213: 6978288849054238859
+    second: Gardener-Hit_44
+  - first:
+      213: -190146412513647720
+    second: Gardener-Hit_45
+  - first:
+      213: 6459248247469537971
+    second: Gardener-Hit_46
+  - first:
+      213: 8703568112146979484
+    second: Gardener-Hit_47
+  - first:
+      213: -1273250672155585815
+    second: Gardener-Hit_48
+  - first:
+      213: -8869769227550772532
+    second: Gardener-Hit_49
+  - first:
+      213: -6361315440210774703
+    second: Gardener-Hit_50
+  - first:
+      213: 3781147491438849485
+    second: Gardener-Hit_51
+  - first:
+      213: -4103446810526434139
+    second: Gardener-Hit_52
+  - first:
+      213: 7078407464824246189
+    second: Gardener-Hit_53
+  - first:
+      213: 5186134182099977042
+    second: Gardener-Hit_54
+  - first:
+      213: -1583332804548439534
+    second: Gardener-Hit_55
+  - first:
+      213: 4200681816837519227
+    second: Gardener-Hit_56
+  - first:
+      213: -8224077503966548757
+    second: Gardener-Hit_57
+  - first:
+      213: -8055245789994743223
+    second: Gardener-Hit_58
+  - first:
+      213: 2054977245214886278
+    second: Gardener-Hit_59
+  - first:
+      213: -707597682814592145
+    second: Gardener-Hit_60
+  - first:
+      213: 6574472514571478435
+    second: Gardener-Hit_61
+  - first:
+      213: -2064556020489323607
+    second: Gardener-Hit_62
+  - first:
+      213: -6308724421536863194
+    second: Gardener-Hit_63
+  - first:
+      213: -9044060913305187574
+    second: Gardener-Hit_64
+  - first:
+      213: -1665980248094004321
+    second: Gardener-Hit_65
+  - first:
+      213: 528696908678132513
+    second: Gardener-Hit_66
+  - first:
+      213: 6159904995617784434
+    second: Gardener-Hit_67
+  - first:
+      213: 8606805394138607030
+    second: Gardener-Hit_68
+  - first:
+      213: 8416459531021542504
+    second: Gardener-Hit_69
+  - first:
+      213: -8615712839113810706
+    second: Gardener-Hit_70
+  - first:
+      213: -7694506034833778193
+    second: Gardener-Hit_71
+  - first:
+      213: 3384217077603250216
+    second: Gardener-Hit_72
+  - first:
+      213: 7983330075915276730
+    second: Gardener-Hit_73
+  - first:
+      213: -3361287797049135538
+    second: Gardener-Hit_74
+  - first:
+      213: 4716411460466871275
+    second: Gardener-Hit_75
+  - first:
+      213: 1604513023632398633
+    second: Gardener-Hit_76
+  - first:
+      213: 5390757240535252528
+    second: Gardener-Hit_77
+  - first:
+      213: -2468298196824189072
+    second: Gardener-Hit_78
+  - first:
+      213: 7871817783805590741
+    second: Gardener-Hit_79
+  - first:
+      213: -5901595089287832355
+    second: Gardener-Hit_80
+  - first:
+      213: -2668374468150938432
+    second: Gardener-Hit_81
+  - first:
+      213: 959149957817554392
+    second: Gardener-Hit_82
+  - first:
+      213: -5803393220112348519
+    second: Gardener-Hit_83
+  - first:
+      213: 8687108028854953415
+    second: Gardener-Hit_84
+  - first:
+      213: -6607458406866494770
+    second: Gardener-Hit_85
+  - first:
+      213: 1150486715024358915
+    second: Gardener-Hit_86
+  - first:
+      213: 2954366667655221954
+    second: Gardener-Hit_87
+  - first:
+      213: -1037216240694112556
+    second: Gardener-Hit_88
+  - first:
+      213: -2468513330611830064
+    second: Gardener-Hit_89
+  - first:
+      213: 4781471344397943937
+    second: Gardener-Hit_90
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gardener-Hit_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 207302c58718dd230800000000000000
+      internalID: 3665228025691125506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Hit_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9734b4604a3ae07a0800000000000000
+      internalID: -6409005294826077319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Hit_2
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e8b0fa836338b2e0800000000000000
+      internalID: -2109879922797266716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Hit_3
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0abd469b7f01f25e0800000000000000
+      internalID: -1932307058965292128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Hit_4
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50b5a4404b655010800000000000000
+      internalID: 1176964801401040986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Hit_5
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39169e4294e884470800000000000000
+      internalID: 8379103551525839251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Hit_6
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb82201fc6e428650800000000000000
+      internalID: 6233631064041072827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Hit_7
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b3067e8b6200b30800000000000000
+      internalID: 4251440623835429743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Hit_8
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3568d9f8d2ecbf80800000000000000
+      internalID: -8089341409131731653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Hit_9
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfa914a253423ce20800000000000000
+      internalID: 3369576756964072189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Hit_10
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7e2d33f99d9b070800000000000000
+      internalID: 8122762680731887609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Hit_11
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b1c793b3bf0599f0800000000000000
+      internalID: -462446122248977995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Hit_12
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5adeb7529c6b48240800000000000000
+      internalID: 4793156878462610853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Hit_13
+      rect:
+        serializedVersion: 2
+        x: 5200
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0fa2830344c2cc60800000000000000
+      internalID: 7837042093678833418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Hit_14
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8867813797be20610800000000000000
+      internalID: 1586088925642389128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Hit_15
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbdfef21d99286260800000000000000
+      internalID: 7090963367900151227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Hit_16
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec18dfcd83f64d30800000000000000
+      internalID: 4415484275086335211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Hit_17
+      rect:
+        serializedVersion: 2
+        x: 6800
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1312944f0c83e69d0800000000000000
+      internalID: -2779221518657707727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Hit_18
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 502ba1628d79e76c0800000000000000
+      internalID: -4143707652526263803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 36441ae4942455841a31c7019edfadd8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":19.0,"y":1.0},"gridSpriteSize":{"x":400.0,"y":460.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Gardener-Hit_0: 3665228025691125506
+      Gardener-Hit_1: -6409005294826077319
+      Gardener-Hit_10: 8122762680731887609
+      Gardener-Hit_11: -462446122248977995
+      Gardener-Hit_12: 4793156878462610853
+      Gardener-Hit_13: 7837042093678833418
+      Gardener-Hit_14: 1586088925642389128
+      Gardener-Hit_15: 7090963367900151227
+      Gardener-Hit_16: 4415484275086335211
+      Gardener-Hit_17: -2779221518657707727
+      Gardener-Hit_18: -4143707652526263803
+      Gardener-Hit_2: -2109879922797266716
+      Gardener-Hit_3: -1932307058965292128
+      Gardener-Hit_4: 1176964801401040986
+      Gardener-Hit_5: 8379103551525839251
+      Gardener-Hit_6: 6233631064041072827
+      Gardener-Hit_7: 4251440623835429743
+      Gardener-Hit_8: -8089341409131731653
+      Gardener-Hit_9: 3369576756964072189
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,376 @@
+fileFormatVersion: 2
+guid: 648d4f26c154bfa408710e64d91279b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9161796696394779470
+    second: Gardener-Move_0
+  - first:
+      213: -5346316553115428814
+    second: Gardener-Move_1
+  - first:
+      213: 8292241145502380939
+    second: Gardener-Move_2
+  - first:
+      213: 2295103730116573690
+    second: Gardener-Move_3
+  - first:
+      213: 4923154579662474822
+    second: Gardener-Move_4
+  - first:
+      213: 7182759609694203421
+    second: Gardener-Move_5
+  - first:
+      213: 1325311184170390361
+    second: Gardener-Move_6
+  - first:
+      213: 5633639922064348283
+    second: Gardener-Move_7
+  - first:
+      213: 6685434194147843834
+    second: Gardener-Move_8
+  - first:
+      213: -8278158086406394021
+    second: Gardener-Move_9
+  - first:
+      213: -7157292995619981432
+    second: Gardener-Move_10
+  - first:
+      213: -4511435582473377124
+    second: Gardener-Move_11
+  - first:
+      213: 4176979348643371895
+    second: Gardener-Move_12
+  - first:
+      213: -3053428885697672
+    second: Gardener-Move_13
+  - first:
+      213: 1050663835245295333
+    second: Gardener-Move_14
+  - first:
+      213: -837197783825814723
+    second: Gardener-Move_15
+  - first:
+      213: -5217752441988151064
+    second: Gardener-Move_16
+  - first:
+      213: 1570023213869588322
+    second: Gardener-Move_17
+  - first:
+      213: -7667393049995601395
+    second: Gardener-Move_18
+  - first:
+      213: -4043317895393805277
+    second: Gardener-Move_19
+  - first:
+      213: 7104652438278937650
+    second: Gardener-Move_20
+  - first:
+      213: -202523142937363545
+    second: Gardener-Move_21
+  - first:
+      213: -790329576284309841
+    second: Gardener-Move_22
+  - first:
+      213: -6933600480478276259
+    second: Gardener-Move_23
+  - first:
+      213: 751806399153086154
+    second: Gardener-Move_24
+  - first:
+      213: -292240983081400532
+    second: Gardener-Move_25
+  - first:
+      213: 5351735994845155514
+    second: Gardener-Move_26
+  - first:
+      213: 1771988003188040280
+    second: Gardener-Move_27
+  - first:
+      213: 7850715746039387135
+    second: Gardener-Move_28
+  - first:
+      213: 3395188213674000720
+    second: Gardener-Move_29
+  - first:
+      213: -3963992383832187474
+    second: Gardener-Move_30
+  - first:
+      213: -8167445095181464600
+    second: Gardener-Move_31
+  - first:
+      213: 515258219514196174
+    second: Gardener-Move_32
+  - first:
+      213: -2445917263169026877
+    second: Gardener-Move_33
+  - first:
+      213: 7599280155340843844
+    second: Gardener-Move_34
+  - first:
+      213: -6857895654254301880
+    second: Gardener-Move_35
+  - first:
+      213: -8136340194256855297
+    second: Gardener-Move_36
+  - first:
+      213: -1490357439227634804
+    second: Gardener-Move_37
+  - first:
+      213: 604119262989122174
+    second: Gardener-Move_38
+  - first:
+      213: -8883858928201382452
+    second: Gardener-Move_39
+  - first:
+      213: -1336284380997200513
+    second: Gardener-Move_40
+  - first:
+      213: 4181693336520495415
+    second: Gardener-Move_41
+  - first:
+      213: 6136941878038263698
+    second: Gardener-Move_42
+  - first:
+      213: -5314481443876954612
+    second: Gardener-Move_43
+  - first:
+      213: 4137414297446440241
+    second: Gardener-Move_44
+  - first:
+      213: 6829753550936415696
+    second: Gardener-Move_45
+  - first:
+      213: 8542352811825317308
+    second: Gardener-Move_46
+  - first:
+      213: -4153665148220851319
+    second: Gardener-Move_47
+  - first:
+      213: -3359309864098279895
+    second: Gardener-Move_48
+  - first:
+      213: 5203296491072661588
+    second: Gardener-Move_49
+  - first:
+      213: -1488905209471260703
+    second: Gardener-Move_50
+  - first:
+      213: -4542362078388837171
+    second: Gardener-Move_51
+  - first:
+      213: -8835525883947649181
+    second: Gardener-Move_52
+  - first:
+      213: -6740813216919799676
+    second: Gardener-Move_53
+  - first:
+      213: 2834253316712470543
+    second: Gardener-Move_54
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gardener-Move_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 125
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4b45f8dd8d352f70800000000000000
+      internalID: 9161796696394779470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Move_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 125
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23893c2cb611ec5b0800000000000000
+      internalID: -5346316553115428814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Move_2
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 125
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b833c8d3365f31370800000000000000
+      internalID: 8292241145502380939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Move_3
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 125
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9b54cbea8d9df10800000000000000
+      internalID: 2295103730116573690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7843ad726ec9dd74c89ec576d77343c3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":125.0,"y":155.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Gardener-Move_0: 9161796696394779470
+      Gardener-Move_1: -5346316553115428814
+      Gardener-Move_2: 8292241145502380939
+      Gardener-Move_3: 2295103730116573690
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

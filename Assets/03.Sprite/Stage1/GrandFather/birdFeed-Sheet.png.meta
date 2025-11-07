@@ -1,0 +1,677 @@
+fileFormatVersion: 2
+guid: 3cfbfc10ff8518641abadacb3246c335
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7024617158048805455
+    second: birdFeed-Sheet_0
+  - first:
+      213: -4484659505519490673
+    second: birdFeed-Sheet_1
+  - first:
+      213: -4312972686433644235
+    second: birdFeed-Sheet_2
+  - first:
+      213: -5042220993308944076
+    second: birdFeed-Sheet_3
+  - first:
+      213: 3932215859202570065
+    second: birdFeed-Sheet_4
+  - first:
+      213: 1537602585374008082
+    second: birdFeed-Sheet_5
+  - first:
+      213: 4274526045752578978
+    second: birdFeed-Sheet_6
+  - first:
+      213: 1773120788945554950
+    second: birdFeed-Sheet_7
+  - first:
+      213: 5874666195141476860
+    second: birdFeed-Sheet_8
+  - first:
+      213: -499486915240932451
+    second: birdFeed-Sheet_9
+  - first:
+      213: -539753328491639969
+    second: birdFeed-Sheet_10
+  - first:
+      213: -5384533577192871031
+    second: birdFeed-Sheet_11
+  - first:
+      213: 3134975572655083491
+    second: birdFeed-Sheet_12
+  - first:
+      213: 5184456854177376016
+    second: birdFeed-Sheet_13
+  - first:
+      213: -2812989589434449709
+    second: birdFeed-Sheet_14
+  - first:
+      213: -3758780785964383591
+    second: birdFeed-Sheet_15
+  - first:
+      213: -6537425523489262563
+    second: birdFeed-Sheet_16
+  - first:
+      213: 4881377274972913852
+    second: birdFeed-Sheet_17
+  - first:
+      213: 110897802746511304
+    second: birdFeed-Sheet_18
+  - first:
+      213: 6538434289161915308
+    second: birdFeed-Sheet_19
+  - first:
+      213: 5239943089182731002
+    second: birdFeed-Sheet_20
+  - first:
+      213: -4509627183941456029
+    second: birdFeed-Sheet_21
+  - first:
+      213: -4392746880514153931
+    second: birdFeed-Sheet_22
+  - first:
+      213: -9023006196017406083
+    second: birdFeed-Sheet_23
+  - first:
+      213: -7999898479837985390
+    second: birdFeed-Sheet_24
+  - first:
+      213: 4294635179593622003
+    second: birdFeed-Sheet_25
+  - first:
+      213: -7999224730400785075
+    second: birdFeed-Sheet_26
+  - first:
+      213: -5542270705039497324
+    second: birdFeed-Sheet_27
+  - first:
+      213: 6284596767770188169
+    second: birdFeed-Sheet_28
+  - first:
+      213: 2004674561374577202
+    second: birdFeed-Sheet_29
+  - first:
+      213: 1916931230217952872
+    second: birdFeed-Sheet_30
+  - first:
+      213: 2574662007794923393
+    second: birdFeed-Sheet_31
+  - first:
+      213: 8903267176029948631
+    second: birdFeed-Sheet_32
+  - first:
+      213: -8884437287859089185
+    second: birdFeed-Sheet_33
+  - first:
+      213: -8448971943692274995
+    second: birdFeed-Sheet_34
+  - first:
+      213: 1919914840607717864
+    second: birdFeed-Sheet_35
+  - first:
+      213: 9072609403026824762
+    second: birdFeed-Sheet_36
+  - first:
+      213: 1467722771989802499
+    second: birdFeed-Sheet_37
+  - first:
+      213: 11970935821042059
+    second: birdFeed-Sheet_38
+  - first:
+      213: -3310133873167837758
+    second: birdFeed-Sheet_39
+  - first:
+      213: -8054828142976229861
+    second: birdFeed-Sheet_40
+  - first:
+      213: -1423695108294250061
+    second: birdFeed-Sheet_41
+  - first:
+      213: 8072575269632611728
+    second: birdFeed-Sheet_42
+  - first:
+      213: 755961967436209335
+    second: birdFeed-Sheet_43
+  - first:
+      213: 7867457953088233440
+    second: birdFeed-Sheet_44
+  - first:
+      213: 7684326027259074977
+    second: birdFeed-Sheet_45
+  - first:
+      213: -6889000016309279893
+    second: birdFeed-Sheet_46
+  - first:
+      213: -7479490805802551700
+    second: birdFeed-Sheet_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: birdFeed-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 410
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f42fc9456147c7160800000000000000
+      internalID: 7024617158048805455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: birdFeed-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 0
+        width: 410
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f898ee2c0f943c1c0800000000000000
+      internalID: -4484659505519490673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: birdFeed-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 0
+        width: 410
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 531192b513e3524c0800000000000000
+      internalID: -4312972686433644235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: birdFeed-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 0
+        width: 410
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4399dcea8be660ab0800000000000000
+      internalID: -5042220993308944076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: birdFeed-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 0
+        width: 410
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1573deb7d79029630800000000000000
+      internalID: 3932215859202570065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: birdFeed-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 0
+        width: 410
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 213a0f2a769a65510800000000000000
+      internalID: 1537602585374008082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: birdFeed-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 0
+        width: 410
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a3dc3c8aca225b30800000000000000
+      internalID: 4274526045752578978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: birdFeed-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2870
+        y: 0
+        width: 410
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ec5f096f36b9810800000000000000
+      internalID: 1773120788945554950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: birdFeed-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 3280
+        y: 0
+        width: 410
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1476777c1078150800000000000000
+      internalID: 5874666195141476860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: birdFeed-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 3690
+        y: 0
+        width: 410
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9bcb170c477119f0800000000000000
+      internalID: -499486915240932451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: birdFeed-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 4100
+        y: 0
+        width: 410
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5bcbec15396288f0800000000000000
+      internalID: -539753328491639969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: birdFeed-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 4510
+        y: 0
+        width: 410
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b61427d3b4645b0800000000000000
+      internalID: -5384533577192871031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: birdFeed-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 4920
+        y: 0
+        width: 410
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef02ab6caba18b20800000000000000
+      internalID: 3134975572655083491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: birdFeed-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 5330
+        y: 0
+        width: 410
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017e49a5a04e2f740800000000000000
+      internalID: 5184456854177376016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: birdFeed-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 5740
+        y: 0
+        width: 410
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d043ec4fd046f8d0800000000000000
+      internalID: -2812989589434449709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: birdFeed-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 6150
+        y: 0
+        width: 410
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99287004ac026dbc0800000000000000
+      internalID: -3758780785964383591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: birdFeed-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 6560
+        y: 0
+        width: 410
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d14b9d68f166645a0800000000000000
+      internalID: -6537425523489262563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: birdFeed-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 6970
+        y: 0
+        width: 410
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb0cc69d4c22eb340800000000000000
+      internalID: 4881377274972913852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8d3bdb15d6c8db64792998297751a88b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":18.0,"y":1.0},"gridSpriteSize":{"x":410.0,"y":290.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      birdFeed-Sheet_0: 7024617158048805455
+      birdFeed-Sheet_1: -4484659505519490673
+      birdFeed-Sheet_10: -539753328491639969
+      birdFeed-Sheet_11: -5384533577192871031
+      birdFeed-Sheet_12: 3134975572655083491
+      birdFeed-Sheet_13: 5184456854177376016
+      birdFeed-Sheet_14: -2812989589434449709
+      birdFeed-Sheet_15: -3758780785964383591
+      birdFeed-Sheet_16: -6537425523489262563
+      birdFeed-Sheet_17: 4881377274972913852
+      birdFeed-Sheet_2: -4312972686433644235
+      birdFeed-Sheet_3: -5042220993308944076
+      birdFeed-Sheet_4: 3932215859202570065
+      birdFeed-Sheet_5: 1537602585374008082
+      birdFeed-Sheet_6: 4274526045752578978
+      birdFeed-Sheet_7: 1773120788945554950
+      birdFeed-Sheet_8: 5874666195141476860
+      birdFeed-Sheet_9: -499486915240932451
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

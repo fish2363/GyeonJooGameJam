@@ -1,0 +1,382 @@
+fileFormatVersion: 2
+guid: 2db06fe7dc3e4f84a93809e14e2b2dbb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8440272637974575013
+    second: Gardener-Idle_0
+  - first:
+      213: -1152507590168391462
+    second: Gardener-Idle_1
+  - first:
+      213: 4459773858656160214
+    second: Gardener-Idle_2
+  - first:
+      213: 7886990990422329950
+    second: Gardener-Idle_3
+  - first:
+      213: 1611325586558684016
+    second: Gardener-Idle_4
+  - first:
+      213: 6297554361652776991
+    second: Gardener-Idle_5
+  - first:
+      213: 7083454873622559964
+    second: Gardener-Idle_6
+  - first:
+      213: -3245504841658661281
+    second: Gardener-Idle_7
+  - first:
+      213: -657971380686278705
+    second: Gardener-Idle_8
+  - first:
+      213: 3740434628410747214
+    second: Gardener-Idle_9
+  - first:
+      213: -3046209709363670999
+    second: Gardener-Idle_10
+  - first:
+      213: 3942298763623882992
+    second: Gardener-Idle_11
+  - first:
+      213: 8180872359088178778
+    second: Gardener-Idle_12
+  - first:
+      213: 6932976691081155785
+    second: Gardener-Idle_13
+  - first:
+      213: -5927005598575181882
+    second: Gardener-Idle_14
+  - first:
+      213: 4265021811807137374
+    second: Gardener-Idle_15
+  - first:
+      213: 1905910087082431528
+    second: Gardener-Idle_16
+  - first:
+      213: -1486041357990147368
+    second: Gardener-Idle_17
+  - first:
+      213: -5687674725007752506
+    second: Gardener-Idle_18
+  - first:
+      213: 4494816544593637647
+    second: Gardener-Idle_19
+  - first:
+      213: 4464608952935968189
+    second: Gardener-Idle_20
+  - first:
+      213: -1315074496967037641
+    second: Gardener-Idle_21
+  - first:
+      213: -6152331501890311512
+    second: Gardener-Idle_22
+  - first:
+      213: 3480046359045740062
+    second: Gardener-Idle_23
+  - first:
+      213: -4913801330941672475
+    second: Gardener-Idle_24
+  - first:
+      213: 7839087412738750592
+    second: Gardener-Idle_25
+  - first:
+      213: 973599094461335669
+    second: Gardener-Idle_26
+  - first:
+      213: 6601031880113636558
+    second: Gardener-Idle_27
+  - first:
+      213: 3827347670262479541
+    second: Gardener-Idle_28
+  - first:
+      213: 2874784204687280870
+    second: Gardener-Idle_29
+  - first:
+      213: 2372988162077672091
+    second: Gardener-Idle_30
+  - first:
+      213: -421928621664174956
+    second: Gardener-Idle_31
+  - first:
+      213: 7313751897429285762
+    second: Gardener-Idle_32
+  - first:
+      213: -5516084410035946333
+    second: Gardener-Idle_33
+  - first:
+      213: -311522224925501892
+    second: Gardener-Idle_34
+  - first:
+      213: -4085039275067014277
+    second: Gardener-Idle_35
+  - first:
+      213: -8625082044828654648
+    second: Gardener-Idle_36
+  - first:
+      213: 9104133032419312834
+    second: Gardener-Idle_37
+  - first:
+      213: 8832917309385860048
+    second: Gardener-Idle_38
+  - first:
+      213: 2305774403802558486
+    second: Gardener-Idle_39
+  - first:
+      213: 4968192560938125488
+    second: Gardener-Idle_40
+  - first:
+      213: 3228837016157559561
+    second: Gardener-Idle_41
+  - first:
+      213: -8135442414612566550
+    second: Gardener-Idle_42
+  - first:
+      213: 9110412559332646784
+    second: Gardener-Idle_43
+  - first:
+      213: 1934759227612033572
+    second: Gardener-Idle_44
+  - first:
+      213: -8695794678768151004
+    second: Gardener-Idle_45
+  - first:
+      213: -2652194508061452207
+    second: Gardener-Idle_46
+  - first:
+      213: -734152302698568582
+    second: Gardener-Idle_47
+  - first:
+      213: -2065798117690790213
+    second: Gardener-Idle_48
+  - first:
+      213: -361374633946030401
+    second: Gardener-Idle_49
+  - first:
+      213: 1749343326241751420
+    second: Gardener-Idle_50
+  - first:
+      213: 2562788792124809900
+    second: Gardener-Idle_51
+  - first:
+      213: 8565987918367753968
+    second: Gardener-Idle_52
+  - first:
+      213: -3618295973044588058
+    second: Gardener-Idle_53
+  - first:
+      213: -4696604671056388632
+    second: Gardener-Idle_54
+  - first:
+      213: -3382358693475193392
+    second: Gardener-Idle_55
+  - first:
+      213: -3677698063068830757
+    second: Gardener-Idle_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gardener-Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b58831611c02eda80800000000000000
+      internalID: -8440272637974575013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Idle_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad05217f3787100f0800000000000000
+      internalID: -1152507590168391462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Idle_2
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d906cf02bc44ed30800000000000000
+      internalID: 4459773858656160214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gardener-Idle_3
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 400
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a44dac488347d60800000000000000
+      internalID: 7886990990422329950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 14e612e8dfed65a4bb55f3dc5af12ea5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":400.0,"y":460.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Gardener-Idle_0: -8440272637974575013
+      Gardener-Idle_1: -1152507590168391462
+      Gardener-Idle_2: 4459773858656160214
+      Gardener-Idle_3: 7886990990422329950
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
