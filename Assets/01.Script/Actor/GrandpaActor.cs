@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class GrandpaActor : SequenceActorBase
 {
-    [SerializeField] private float snackDuration = 1f;
+    private float snackDuration = 2f;
     [SerializeField] private float pigeonSnackDur = 1f;
     [SerializeField] private float newspaperDuration = 1f;
 

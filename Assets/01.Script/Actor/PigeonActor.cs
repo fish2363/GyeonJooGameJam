@@ -50,13 +50,12 @@
         }
 
     // 물 피해서 날아다니는 구간 시작
-    // 물 피해서 날아다니는 구간 시작
     protected override void OnTrigger()
     {
         base.OnTrigger();
         Debug.Log("비둘기: 물 피해서 날아댕김");
 
-        // 이미 돌고 있으면 새로 만들지 말고 그냥 두기 (툭 끊기는 거 방지)
+        // 이미 돌고 있으면 새로 만들지 않음 (툭 끊기는 거 방지)
         if (flyTween != null && flyTween.IsActive())
             return;
 
@@ -66,20 +65,36 @@
             return;
         }
 
-        float angle = 0f;
+        // 현재 위치 기준으로 각도/반지름 계산
+        Vector3 dir = (transform.position - flyCenter.position);
+        float radius = dir.magnitude;
+        if (radius < 0.001f)
+        {
+            // 거의 정확히 중심에 붙어있으면, 그냥 flyRadius 사용
+            radius = flyRadius;
+            dir = Vector3.right * radius;
+        }
+        else
+        {
+            // 반지름 너무 이상하면 설정값으로 덮어도 됨 (원하면 여기에 radius = flyRadius;)
+        }
 
+        float startAngle = Mathf.Atan2(dir.y, dir.x);
+        float angle = startAngle;
+
+        // startAngle에서부터 한 바퀴씩 계속 증가
         flyTween = DOTween.To(
             () => angle,
             x =>
             {
                 angle = x;
-                var offset = new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0f) * flyRadius;
+                var offset = new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0f) * radius;
                 transform.position = flyCenter.position + offset;
             },
-            Mathf.PI * 2f,
+            startAngle + Mathf.PI * 2f,
             flyLoopDuration
         )
-        .SetLoops(-1, LoopType.Restart)
+        .SetLoops(-1, LoopType.Incremental)  // 각도가 계속 누적되도록
         .SetEase(Ease.Linear);
     }
 

@@ -303,7 +303,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 34
-    OrthographicSize: 5
+    OrthographicSize: 6.88
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -330,10 +330,11 @@ Transform:
   m_GameObject: {fileID: 142788532}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.8, z: -10}
+  m_LocalPosition: {x: 0, y: -2.03, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 494941071}
   - {fileID: 803599520}
   - {fileID: 408024495}
   m_Father: {fileID: 0}
@@ -345,7 +346,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142788532}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30f8836cfe67b504fa4b665634adb869, type: 3}
   m_Name: 
@@ -974,7 +975,7 @@ MonoBehaviour:
     enabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
     dilateShift: 0.5
-    blurShift: 0.2
+    blurShift: 0
     fillPass:
       shader: {fileID: 0}
       serializedProperties: []
@@ -1489,8 +1490,8 @@ MonoBehaviour:
   outlineParameters:
     enabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
-    dilateShift: 1
-    blurShift: 1
+    dilateShift: 0.5
+    blurShift: 0
     fillPass:
       shader: {fileID: 0}
       serializedProperties: []
@@ -1724,12 +1725,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 494941069}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.71, z: 0}
-  m_LocalScale: {x: 1.0471, y: 1.0471, z: 1.0471}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.09000003, z: 10}
+  m_LocalScale: {x: 1.4666729, y: 1.4666729, z: 1.4666729}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 142788535}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &494941072
 MonoBehaviour:
@@ -2118,8 +2119,8 @@ MonoBehaviour:
   outlineParameters:
     enabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
-    dilateShift: 1
-    blurShift: 1
+    dilateShift: 0.5
+    blurShift: 0
     fillPass:
       shader: {fileID: 0}
       serializedProperties: []
@@ -3408,7 +3409,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sequenceManager: {fileID: 1015038077}
   characterId: 3
-  snackDuration: 1
   pigeonSnackDur: 1
   newspaperDuration: 1
 --- !u!1 &1103685367
@@ -3895,7 +3895,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.88
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3920,7 +3920,7 @@ Transform:
   m_GameObject: {fileID: 1359994920}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.8, z: -10}
+  m_LocalPosition: {x: 0, y: -2.03, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5324,7 +5324,7 @@ MonoBehaviour:
     Bounds:
       m_Center: {x: 0, y: 0, z: 0}
       m_Extent: {x: 0.5, y: 0.5, z: 0.5}
-    CutoutThreshold: 0.5
+    CutoutThreshold: 0.843
     CullMode: 0
     cutoutTextureName: 
     cutoutTextureIndex: 0
@@ -5332,8 +5332,8 @@ MonoBehaviour:
   outlineParameters:
     enabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
-    dilateShift: 0.4
-    blurShift: 0.3
+    dilateShift: 0.05
+    blurShift: 0
     fillPass:
       shader: {fileID: 0}
       serializedProperties: []
@@ -5609,4 +5609,3 @@ SceneRoots:
   - {fileID: 142788535}
   - {fileID: 1431908760}
   - {fileID: 719851069}
-  - {fileID: 494941071}
