@@ -378,7 +378,7 @@ Transform:
   m_GameObject: {fileID: 471093132}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -26.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -554,6 +554,10 @@ MonoBehaviour:
   whitePanel: {fileID: 1527268408}
   ppVolume: {fileID: 1585765927}
   fadeTime: 1.2
+  stage1Bgm:
+    ID: 268435456
+    _sourceAsset: {fileID: 11400000, guid: 3aed878bdd4dbb0439ec5f00a3b64c87, type: 2}
+    <DebugObject>k__BackingField: {fileID: 671478620}
 --- !u!114 &671478622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1192,6 +1196,7 @@ GameObject:
   - component: {fileID: 1288594877}
   - component: {fileID: 1288594880}
   - component: {fileID: 1288594881}
+  - component: {fileID: 1288594882}
   m_Layer: 6
   m_Name: StartButton
   m_TagString: Untagged
@@ -1266,6 +1271,18 @@ MonoBehaviour:
       - m_Target: {fileID: 671478621}
         m_TargetAssemblyTypeName: MainmenuLogic, Assembly-CSharp
         m_MethodName: GameStartCutScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1288594882}
+        m_TargetAssemblyTypeName: Ami.BroAudio.SoundSource, BroAudio
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1350,6 +1367,29 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1288594882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288594875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385ffc06106304cc3824d5bcf25a7037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onlyPlayOnce: 0
+  _playOnEnable: 0
+  _stopOnDisable: 0
+  _overrideFadeOut: -1
+  _sound:
+    ID: 1073741824
+    _sourceAsset: {fileID: 11400000, guid: 3aed878bdd4dbb0439ec5f00a3b64c87, type: 2}
+    <DebugObject>k__BackingField: {fileID: 1288594875}
+  _overrideGroup: {fileID: 0}
+  _positionMode: 0
+  _delay: 0
 --- !u!1 &1416390397
 GameObject:
   m_ObjectHideFlags: 0
@@ -2229,6 +2269,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4537705167601893025, guid: a0ec78e15373b50469e69a666a3f3ce9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4537705167601893025, guid: a0ec78e15373b50469e69a666a3f3ce9, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4537705167601893025, guid: a0ec78e15373b50469e69a666a3f3ce9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4537705167601893025, guid: a0ec78e15373b50469e69a666a3f3ce9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4987093281122349317, guid: a0ec78e15373b50469e69a666a3f3ce9, type: 3}
       propertyPath: m_Name
       value: ESCCanvas
@@ -2781,7 +2837,7 @@ Transform:
   m_GameObject: {fileID: 2005479242}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -26.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

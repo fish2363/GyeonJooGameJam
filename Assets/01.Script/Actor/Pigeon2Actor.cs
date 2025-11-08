@@ -1,3 +1,4 @@
+using Ami.BroAudio;
 using DG.Tweening;
 using System.Collections;
 using UnityEngine;
@@ -7,6 +8,9 @@ public class Pigeon2Actor : SequenceActorBase
     [SerializeField] private Transform runPoint;
     public const string FLAG_FlyPigeon = "flyPigeon";
     private Vector3 origin;
+
+    [SerializeField] private SoundID gogo;
+
     protected override void Awake()
     {
         origin = transform.position;
@@ -16,6 +20,7 @@ public class Pigeon2Actor : SequenceActorBase
         ctx.SetFlag(FLAG_FlyPigeon);
         Animator.Play("RunToCat");
         Debug.Log("비둘기:날아오르기");
+        BroAudio.Play(gogo);
         transform.DOMove(runPoint.position,3f);
         bool ASeePigeon = ctx.HasFlag(CatActor.FLAG_CatSeePigeon);
 

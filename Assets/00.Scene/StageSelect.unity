@@ -483,6 +483,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: GameScene2
+  meow:
+    ID: 1073741839
+    _sourceAsset: {fileID: 11400000, guid: 54638dd94172e2e4b833901dd2c8522a, type: 2}
+    <DebugObject>k__BackingField: {fileID: 355830944}
 --- !u!114 &355830947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -841,6 +845,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: GameScene
+  meow:
+    ID: 1073741839
+    _sourceAsset: {fileID: 11400000, guid: 54638dd94172e2e4b833901dd2c8522a, type: 2}
+    <DebugObject>k__BackingField: {fileID: 355830944}
 --- !u!114 &837200054
 MonoBehaviour:
   m_ObjectHideFlags: 0

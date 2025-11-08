@@ -1,13 +1,16 @@
+using Ami.BroAudio;
 using DG.Tweening;
 using System.Collections;
 using UnityEngine;
 
 public class MusicionActor : SequenceActorBase
 {
+    [SerializeField] private SoundID meow;
+
     public override IEnumerator Execute(SequenceContext ctx)
     {
         Debug.Log("음악가 : 노래 부르기");
-
+        BroAudio.Play(meow);
         Animator.Play("Song");
 
         bool ASeeCat = ctx.HasFlag(CatActor.FLAG_Can_CatSeeMusicion);

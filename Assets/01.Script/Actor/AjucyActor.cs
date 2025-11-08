@@ -1,3 +1,4 @@
+using Ami.BroAudio;
 using DG.Tweening;
 using System;
 using System.Collections;
@@ -16,6 +17,7 @@ public class AjucyActor : SequenceActorBase
     private SequenceContext _ctx;
     [SerializeField] private Transform movePoint_CatAttack;
     private Vector3 origin;
+
 
     protected override void Awake()
     {

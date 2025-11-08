@@ -386,6 +386,14 @@ MonoBehaviour:
   eatPos: {fileID: 1516058901}
   flyCenter: {fileID: 688376160}
   flyRadius: 2.5
+  poop:
+    ID: 1073741828
+    _sourceAsset: {fileID: 11400000, guid: 0e48e6b619c3065439ec87aa39bfdaa3, type: 2}
+    <DebugObject>k__BackingField: {fileID: 91816358}
+  fly:
+    ID: 1073741829
+    _sourceAsset: {fileID: 11400000, guid: 0e48e6b619c3065439ec87aa39bfdaa3, type: 2}
+    <DebugObject>k__BackingField: {fileID: 91816358}
 --- !u!95 &91816361
 Animator:
   serializedVersion: 7
@@ -1582,6 +1590,10 @@ MonoBehaviour:
   goPos: {fileID: 866872004}
   comePos: {fileID: 112625052}
   outlinable: {fileID: 386130528}
+  bell:
+    ID: 1073741830
+    _sourceAsset: {fileID: 11400000, guid: 580793c6e8ca3664b9ad612c1fcdb17e, type: 2}
+    <DebugObject>k__BackingField: {fileID: 386130522}
 --- !u!114 &386130527
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3161,6 +3173,14 @@ MonoBehaviour:
   <Animator>k__BackingField: {fileID: 581007618}
   characterId: 3
   newspaperDuration: 1
+  feed:
+    ID: 1073741832
+    _sourceAsset: {fileID: 11400000, guid: 32ad17eee459bc84fa69580e55c55451, type: 2}
+    <DebugObject>k__BackingField: {fileID: 1098921832}
+  paper:
+    ID: 1073741831
+    _sourceAsset: {fileID: 11400000, guid: 32ad17eee459bc84fa69580e55c55451, type: 2}
+    <DebugObject>k__BackingField: {fileID: 1098921832}
 --- !u!1 &1106840777 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4921082409761692018, guid: defd65879e6ec494ea4010a7c6536f43, type: 3}
@@ -3182,6 +3202,7 @@ MonoBehaviour:
     m_Signals:
     - {fileID: 11400000, guid: 459c73902d914ab42aa5fd9934f34618, type: 2}
     - {fileID: 11400000, guid: 34893347f96ada844b719fddbe1d7777, type: 2}
+    - {fileID: 11400000, guid: 17adb723231f2d54d92b033e3ab8f22a, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -3211,6 +3232,43 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1106840781}
+          m_TargetAssemblyTypeName: Ami.BroAudio.SoundSource, BroAudio
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1106840781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106840777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385ffc06106304cc3824d5bcf25a7037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onlyPlayOnce: 0
+  _playOnEnable: 0
+  _stopOnDisable: 0
+  _overrideFadeOut: -1
+  _sound:
+    ID: 1073741836
+    _sourceAsset: {fileID: 11400000, guid: 77c9d30e9e49edf4c9ee834a753002c1, type: 2}
+    <DebugObject>k__BackingField: {fileID: 1106840777}
+  _overrideGroup: {fileID: 0}
+  _positionMode: 0
+  _delay: 0
 --- !u!1 &1133396547
 GameObject:
   m_ObjectHideFlags: 0
@@ -3264,6 +3322,18 @@ MonoBehaviour:
   goPos: {fileID: 1207737793}
   attackPos: {fileID: 1599948771}
   dialogueBox: {fileID: 84009470}
+  angry:
+    ID: 1073741827
+    _sourceAsset: {fileID: 11400000, guid: 93dbd72d1d2c710468a166897dc25409, type: 2}
+    <DebugObject>k__BackingField: {fileID: 1133396547}
+  watering:
+    ID: 1073741826
+    _sourceAsset: {fileID: 11400000, guid: 93dbd72d1d2c710468a166897dc25409, type: 2}
+    <DebugObject>k__BackingField: {fileID: 1133396547}
+  waterAttack:
+    ID: 1073741827
+    _sourceAsset: {fileID: 11400000, guid: 93dbd72d1d2c710468a166897dc25409, type: 2}
+    <DebugObject>k__BackingField: {fileID: 1133396547}
 --- !u!1 &1173451305 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4261373816239371691, guid: 779f50e7d8f13504d87d91b360348ac6, type: 3}
@@ -5712,10 +5782,10 @@ PrefabInstance:
     - target: {fileID: 6766650176804103675, guid: defd65879e6ec494ea4010a7c6536f43, type: 3}
       propertyPath: m_PlayableAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 4c7e71f27d02d494598d3c80d5da7f7f, type: 2}
+      objectReference: {fileID: 11400000, guid: c5f7a3af62124af4baab81525ddf8b85, type: 2}
     - target: {fileID: 6766650176804103675, guid: defd65879e6ec494ea4010a7c6536f43, type: 3}
       propertyPath: m_SceneBindings.Array.size
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6766650176804103675, guid: defd65879e6ec494ea4010a7c6536f43, type: 3}
       propertyPath: m_SceneBindings.Array.data[10].key
@@ -5737,6 +5807,10 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[14].key
       value: 
       objectReference: {fileID: 6763957711332448275, guid: 943f68a188911b242971932ccb6577fd, type: 2}
+    - target: {fileID: 6766650176804103675, guid: defd65879e6ec494ea4010a7c6536f43, type: 3}
+      propertyPath: m_SceneBindings.Array.data[15].key
+      value: 
+      objectReference: {fileID: 8582051119676414704, guid: 943f68a188911b242971932ccb6577fd, type: 2}
     - target: {fileID: 6766650176804103675, guid: defd65879e6ec494ea4010a7c6536f43, type: 3}
       propertyPath: m_SceneBindings.Array.data[3].value
       value: 
@@ -5785,6 +5859,10 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[14].value
       value: 
       objectReference: {fileID: 468185626}
+    - target: {fileID: 6766650176804103675, guid: defd65879e6ec494ea4010a7c6536f43, type: 3}
+      propertyPath: m_SceneBindings.Array.data[15].value
+      value: 
+      objectReference: {fileID: 1106840780}
     - target: {fileID: 6766650176804103675, guid: defd65879e6ec494ea4010a7c6536f43, type: 3}
       propertyPath: m_ExposedReferences.m_References.Array.size
       value: 3
@@ -6041,6 +6119,18 @@ PrefabInstance:
       propertyPath: blockPanel
       value: 
       objectReference: {fileID: 248338605}
+    - target: {fileID: 9163093020435256731, guid: defd65879e6ec494ea4010a7c6536f43, type: 3}
+      propertyPath: stage1Bgm.ID
+      value: 268435457
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163093020435256731, guid: defd65879e6ec494ea4010a7c6536f43, type: 3}
+      propertyPath: stage1Bgm._sourceAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 54638dd94172e2e4b833901dd2c8522a, type: 2}
+    - target: {fileID: 9163093020435256731, guid: defd65879e6ec494ea4010a7c6536f43, type: 3}
+      propertyPath: stage1Bgm.<DebugObject>k__BackingField
+      value: 
+      objectReference: {fileID: 5961340262736757322}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5527240574519905194, guid: defd65879e6ec494ea4010a7c6536f43, type: 3}
@@ -6060,10 +6150,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4921082409761692018, guid: defd65879e6ec494ea4010a7c6536f43, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1106840780}
+    - targetCorrespondingSourceObject: {fileID: 4921082409761692018, guid: defd65879e6ec494ea4010a7c6536f43, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1106840781}
   m_SourcePrefab: {fileID: 100100000, guid: defd65879e6ec494ea4010a7c6536f43, type: 3}
 --- !u!224 &5961340262736757321 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1427129240657193180, guid: defd65879e6ec494ea4010a7c6536f43, type: 3}
+  m_PrefabInstance: {fileID: 5961340262736757320}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5961340262736757322 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4239984216589290958, guid: defd65879e6ec494ea4010a7c6536f43, type: 3}
   m_PrefabInstance: {fileID: 5961340262736757320}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8613789135078669048

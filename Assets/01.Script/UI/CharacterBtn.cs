@@ -4,6 +4,7 @@ using TMPro;
 using EPOOutline;
 using System.Collections.Generic;
 using DG.Tweening;
+using Ami.BroAudio;
 
 public class CharacterBtn : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class CharacterBtn : MonoBehaviour
     [SerializeField] private Image selectImage;
     [SerializeField] private Image back;
     [SerializeField] private Image front;
+
+    [SerializeField] private SoundID meow;
+
     private void Start()
     {
         front.rectTransform.localScale = Vector3.one;
@@ -29,7 +33,7 @@ public class CharacterBtn : MonoBehaviour
     public void Flip(bool toFront,float speed=1f)
     {
         isFront = toFront;
-
+        BroAudio.Play(meow);
         back.DOKill();
         front.DOKill();
 

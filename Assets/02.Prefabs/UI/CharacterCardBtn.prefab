@@ -148,6 +148,10 @@ MonoBehaviour:
   selectImage: {fileID: 2924668035880769682}
   back: {fileID: 4303842930884582720}
   front: {fileID: 6711765661521722713}
+  meow:
+    ID: 1073741825
+    _sourceAsset: {fileID: 11400000, guid: b2ee5001ec075f34989a7d2a12957a87, type: 2}
+    <DebugObject>k__BackingField: {fileID: 2924386309137158348}
 --- !u!1 &5371954205334421408
 GameObject:
   m_ObjectHideFlags: 0

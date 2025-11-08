@@ -2,12 +2,15 @@ using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
+using Ami.BroAudio;
 
 public class ClearUI : MonoBehaviour
 {
     [SerializeField] private CanvasGroupCompo canvasGroup;
     [SerializeField] private GameEventChannelSO ClearChannel;
     [SerializeField] private RectTransform _clearUI;
+    [SerializeField] private SoundID meow;
+
     public string nextSceneName;
 
     private void Awake()
@@ -22,6 +25,7 @@ public class ClearUI : MonoBehaviour
 
     private void HandleClearUI(ClearGameEvent obj)
     {
+        BroAudio.Play(meow);
         canvasGroup.SetGroup(true,1);
         OpenUIAnimation();
     }

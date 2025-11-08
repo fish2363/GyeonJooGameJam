@@ -2126,6 +2126,10 @@ MonoBehaviour:
   <Animator>k__BackingField: {fileID: 642764746}
   characterId: 8
   runPoint: {fileID: 1846908555}
+  gogo:
+    ID: 1073741829
+    _sourceAsset: {fileID: 11400000, guid: 0e48e6b619c3065439ec87aa39bfdaa3, type: 2}
+    <DebugObject>k__BackingField: {fileID: 642764741}
 --- !u!1 &654757430
 GameObject:
   m_ObjectHideFlags: 0
@@ -2993,6 +2997,10 @@ MonoBehaviour:
   dialogue: {fileID: 2118796519}
   dialogueWow: {fileID: 856715336}
   outline: {fileID: 1517028467}
+  meow:
+    ID: 1073741833
+    _sourceAsset: {fileID: 11400000, guid: db7d77628b5d6b64c8d3848ffb94596a, type: 2}
+    <DebugObject>k__BackingField: {fileID: 1143923964}
 --- !u!1 &1162398044
 GameObject:
   m_ObjectHideFlags: 0
@@ -3471,6 +3479,10 @@ MonoBehaviour:
   sequenceManager: {fileID: 5961340262736757321}
   <Animator>k__BackingField: {fileID: 1349633132}
   characterId: 7
+  meow:
+    ID: 1073741835
+    _sourceAsset: {fileID: 11400000, guid: 2e9771adeb5f4974390d0bc51438a9ff, type: 2}
+    <DebugObject>k__BackingField: {fileID: 1349633127}
 --- !u!1 &1354138398
 GameObject:
   m_ObjectHideFlags: 0

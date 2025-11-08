@@ -1,4 +1,5 @@
-    using DG.Tweening;
+using Ami.BroAudio;
+using DG.Tweening;
     using System.Collections;
     using UnityEngine;
 
@@ -17,6 +18,8 @@
         private float flyLoopDuration = 2f;  // 한 바퀴 도는 시간
 
         private Tween flyTween;   // 빙글빙글 돌기용 트윈
+        [SerializeField] private SoundID poop;
+        [SerializeField] private SoundID fly;
 
         protected override void Awake()
         {
@@ -32,6 +35,7 @@
             // 1) 배설하기
             Debug.Log("비둘기: 배설하기");
             Animator.Play("Poop");
+            BroAudio.Play(poop);
             yield return new WaitForSeconds(poopDuration);
 
             // 2) (예시 그대로 유지) 관리인이 나중에 실행됐으면 맞는 연출
@@ -59,6 +63,7 @@
     {
         base.OnTrigger();
         Debug.Log("비둘기: 물 피해서 날아댕김");
+        BroAudio.Play(fly);
 
         // 이미 돌고 있으면 새로 만들지 않음 (툭 끊기는 거 방지)
         if (flyTween != null && flyTween.IsActive())

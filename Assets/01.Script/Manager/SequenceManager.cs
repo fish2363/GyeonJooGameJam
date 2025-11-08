@@ -7,10 +7,11 @@ using Unity.Cinemachine;
 using UnityEngine.Playables;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using Ami.BroAudio;
 
 public class SequenceManager : MonoBehaviour
 {
-    [SerializeField] private Volume volume;
+    [SerializeField] private UnityEngine.Rendering.Volume volume;
 
     private FilmGrain filmGrain;
     private ColorAdjustments colorAdjustments;
@@ -42,6 +43,7 @@ public class SequenceManager : MonoBehaviour
     private readonly List<SequenceActorBase> executedActors = new();
     public List<Trofical> troficals = new();
 
+    [SerializeField] private SoundID click;
 
     private const int activeTruePriority = 2;
     private const int activeFalsePriority = 1;
@@ -134,7 +136,7 @@ public class SequenceManager : MonoBehaviour
             MouseTextManager.Instance?.SpawnTextAtMouse("모든 버튼을 선택해주세요!");
             return;
         }
-
+        BroAudio.Play(click);
         inGameEvent?.RaiseEvent(new ComeDownCinemaUIEvent().Initialize());
         var orderCopy = new List<ESequenceCharacter>(selectedOrder);
         StartCoroutine(RunSequence(orderCopy));
@@ -143,6 +145,8 @@ public class SequenceManager : MonoBehaviour
 
     public void ResetSelection()
     {
+        BroAudio.Play(click);
+
         inGameEvent?.RaiseEvent(new ComeUpCinemaUIEvent().Initialize());
 
         // 코루틴 안에서 안전하게 쓰려고 복사본 생성

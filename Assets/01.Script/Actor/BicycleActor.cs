@@ -1,3 +1,4 @@
+using Ami.BroAudio;
 using DG.Tweening;
 using EPOOutline;
 using System.Collections;
@@ -10,6 +11,7 @@ public class BicycleActor : SequenceActorBase
     [SerializeField] private Transform goPos;
     [SerializeField] private Transform comePos;
     [SerializeField] Outlinable outlinable;
+    [SerializeField] private SoundID bell;
 
     public const string FLAG_GONE = "RiderGone";
 
@@ -23,6 +25,7 @@ public class BicycleActor : SequenceActorBase
 
         Debug.Log("자전거: 타고 나가기");
         Animator.Play("Go");
+        BroAudio.Play(bell);
         transform.DOMove(goPos.position, rideOutDuration).OnComplete(() =>
         {
             GetComponent<SpriteRenderer>().DOFade(0, 0.2f);

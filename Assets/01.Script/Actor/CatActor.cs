@@ -1,3 +1,4 @@
+using Ami.BroAudio;
 using DG.Tweening;
 using EPOOutline;
 using System.Collections;
@@ -15,6 +16,7 @@ public class CatActor : SequenceActorBase
     public const string FLAG_Can_CatSeeMusicion = "Can_CatSeeMusicion";
     public const string FLAG_CatSeePigeon = "CatSeePigeon";
     private SequenceContext _ctx;
+    [SerializeField] private SoundID meow;
 
     private Vector3 origin;
     protected override void Awake()
@@ -34,13 +36,15 @@ public class CatActor : SequenceActorBase
             Animator.Play("MoveToPigeon");
             yield return transform.DOMove(meetPigeonPoint.position,1f).WaitForCompletion();
             ctx.SetFlag(FLAG_CatSeePigeon);
+            BroAudio.Play(meow);
             Animator.Play("SeePigeon");
         }
         else
         {
             Debug.Log("고양이 실패:나가기");
             Animator.Play("ChasePigeon");
-            transform.DOMove(exitPoint.position, 2.5f).OnComplete(() =>
+            BroAudio.Play(meow);
+            transform.DOMove(exitPoint.position, 3.5f).OnComplete(() =>
             {
                 outline.enabled = false;
                 GetComponent<SpriteRenderer>().DOFade(0, 0.2f);
@@ -55,6 +59,7 @@ public class CatActor : SequenceActorBase
         base.OnTrigger();
         Debug.Log("고양이 : 비둘기 쫓아가기");
         dialogue.SetActive(false);
+        BroAudio.Play(meow);
         transform.DOMove(chasePoint.position,3f)
             .OnComplete(() =>
             Animator.Play("SeePigeon")
@@ -65,6 +70,7 @@ public class CatActor : SequenceActorBase
     {
         base.OnTrigger2();
         dialogueWow.SetActive(true);
+        BroAudio.Play(meow);
         _ctx.OnClear?.Invoke();
     }
 

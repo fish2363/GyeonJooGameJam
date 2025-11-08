@@ -1,4 +1,5 @@
-﻿using DG.Tweening;
+﻿using Ami.BroAudio;
+using DG.Tweening;
 using System.Collections;
 using UnityEngine;
 
@@ -13,6 +14,10 @@ public class CaretakerActor : SequenceActorBase
     [SerializeField] private GameObject dialogueBox;
     private Vector3 originPos;
     public const string FLAG_CLEAR_ENABLED = "ClearEnabledByPigeon"; // 이후에 할아버지가 있는지
+    [SerializeField] private SoundID angry;
+    [SerializeField] private SoundID watering;
+    [SerializeField] private SoundID waterAttack;
+
     protected override void Awake()
     {
         base.Awake();
@@ -28,6 +33,7 @@ public class CaretakerActor : SequenceActorBase
             // 비둘기가 아예 안 나온 경우 기본 행동
             Debug.Log("관리인: 비둘기가 없으니 기본 행동 (물 뿌리기)");
             // TODO: 물 뿌리기 애니
+            BroAudio.Play(watering);
             Animator.Play("Gardner-Idle");
             yield return new WaitForSeconds(waterDuration);
             yield break;
@@ -38,10 +44,11 @@ public class CaretakerActor : SequenceActorBase
             // 비둘기보다 늦게 실행 → 화단에 물 뿌리기
             Debug.Log("관리인: 비둘기보다 늦게 → 똥 맞아서 화냄");
             Animator.Play("Gardner-Angry");
+
             yield return new WaitForSeconds(hitDuration);
             transform.DOMove(attackPos.position, 0.2f);
-
             yield return new WaitForSeconds(angryDuration/2);
+            BroAudio.Play(waterAttack);
             sequenceManager.ChangeAnim(ESequenceCharacter.Pigeon, "Hit");
             dialogueBox.SetActive(false);
             yield return new WaitForSeconds(angryDuration/2);
@@ -59,6 +66,7 @@ public class CaretakerActor : SequenceActorBase
             Debug.Log("관리인: 비둘기보다 먼저 → Move");
             transform.DOMove(goPos.position,moveDuration/2).SetEase(Ease.InQuad);
             yield return new WaitForSeconds(moveDuration);
+            BroAudio.Play(watering);
             Animator.Play("Gardner-Idle");
         }
         bool hasNextCard = ctx.HasFlag(BicycleActor.FLAG_GONE);
@@ -71,6 +79,7 @@ public class CaretakerActor : SequenceActorBase
     protected override void OnTrigger3()
     {
         base.OnTrigger3();
+        BroAudio.Play(angry);
         dialogueBox.SetActive(true);
     }
     public override IEnumerator Rewind(SequenceContext ctx)

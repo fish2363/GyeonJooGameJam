@@ -5,6 +5,7 @@ using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using DG.Tweening;
 using UnityEngine.UI;
+using Ami.BroAudio;
 
 public class MainmenuLogic : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class MainmenuLogic : MonoBehaviour
     [SerializeField] private Image whitePanel;
 
     [Header("PP 볼륨 (Global Volume)")]
-    [SerializeField] private Volume ppVolume;
+    [SerializeField] private UnityEngine.Rendering.Volume ppVolume;
 
     [Header("Bloom 페이드 설정")]
     [SerializeField] private float fadeTime = 1.2f;
@@ -22,6 +23,9 @@ public class MainmenuLogic : MonoBehaviour
     private bool _isStarting;
     private Tween _ppTween;
 
+    [SerializeField] private Ami.BroAudio.SoundID stage1Bgm;
+
+        
     private void Awake()
     {
         if (ppVolume == null)
@@ -42,7 +46,8 @@ public class MainmenuLogic : MonoBehaviour
             Debug.LogWarning("MainmenuLogic: Bloom override가 프로필에 없습니다.");
             return;
         }
-
+        BroAudio.Stop(BroAudioType.Music);
+        BroAudio.Play(stage1Bgm);
     }
 
     public void GameStart()
@@ -55,7 +60,6 @@ public class MainmenuLogic : MonoBehaviour
             SceneManager.LoadScene("StageSelect");
             return;
         }
-
         _ppTween?.Kill();
         whitePanel.DOFade(1,fadeTime);
         _ppTween = DOTween.To(
