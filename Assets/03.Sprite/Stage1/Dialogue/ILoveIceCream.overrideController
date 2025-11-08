@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ILoveIceCream
+  m_Controller: {fileID: 9100000, guid: 1af1f585a5883c14f89d0502adad2001, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 0712a5de8102fa545aa5626179a67e93, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 29e8c746521bd07489c81ebdf90d671c, type: 2}

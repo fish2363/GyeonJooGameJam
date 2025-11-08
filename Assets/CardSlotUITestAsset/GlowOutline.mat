@@ -46,7 +46,7 @@ Material:
     - _EnableExternalAlpha: 0
     - _GlowIntensity: 5
     - _GlowSoftness: 0
-    - _GlowWidth: 12
+    - _GlowWidth: 7
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0

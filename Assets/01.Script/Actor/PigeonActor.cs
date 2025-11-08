@@ -37,7 +37,7 @@
             // 2) (예시 그대로 유지) 관리인이 나중에 실행됐으면 맞는 연출
             if (idxCaretaker != -1 && idxCaretaker > idxPigeon)
             {
-                sequenceManager.ChangeAnim(ESequenceCharacter.Caretaker, "Gardner-Hit");
+                sequenceManager.ChangeAnim(ESequenceCharacter.Caretaker, "Gardner-Hit",3);
                 Debug.Log("비둘기: 전에 있던 관리인이 똥을 맞음 (화냄)");
                 yield return new WaitForSeconds(caretakerHitDelay);
             }
@@ -129,9 +129,15 @@
 
     public override IEnumerator Rewind(SequenceContext ctx)
     {
-        // 리와인드 시에도 혹시 남아있을 flyTween 정리
-        if (DOTween.IsTweening(transform))
-            flyTween.Kill();
+        if (flyTween != null)
+        {
+            if (flyTween.IsActive())
+                flyTween.Kill(false);   // false = Complete 안 하고 현재 값 유지
+            flyTween = null;
+        }
+
+        // 2) 혹시 다른 position 트윈들 있으면 다 끊기
+        transform.DOKill(); // 이 트랜스폼에 걸린 모든 트윈 정리
         Animator.Play("Idle");
         transform.DOMove(originPos, 1f);
         return base.Rewind(ctx);

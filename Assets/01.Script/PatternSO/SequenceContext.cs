@@ -6,10 +6,17 @@ public enum ESequenceCharacter
     Pigeon,
     Caretaker,
     Grandpa,
+
+    AJumma,
+    AJucy,
+    Cat,
+    Musion,
+    Pigeon2
     // 스테이지2,3에서 늘려가면 됨
 }
 public class SequenceContext
 {
+    public static bool IsTropical;
     // 이번 턴에 선택된 순서
     public List<ESequenceCharacter> Order { get; private set; }
 

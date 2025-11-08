@@ -10,6 +10,7 @@ public class CaretakerActor : SequenceActorBase
     [SerializeField] private float moveDuration = 1f;
     [SerializeField] private Transform goPos;
     [SerializeField] private Transform attackPos;
+    [SerializeField] private GameObject dialogueBox;
     private Vector3 originPos;
     public const string FLAG_CLEAR_ENABLED = "ClearEnabledByPigeon"; // 이후에 할아버지가 있는지
     protected override void Awake()
@@ -42,6 +43,7 @@ public class CaretakerActor : SequenceActorBase
 
             yield return new WaitForSeconds(angryDuration/2);
             sequenceManager.ChangeAnim(ESequenceCharacter.Pigeon, "Hit");
+            dialogueBox.SetActive(false);
             yield return new WaitForSeconds(angryDuration/2);
             Animator.Play("Gardner-Idle");
 
@@ -66,9 +68,14 @@ public class CaretakerActor : SequenceActorBase
             sequenceManager.ChangeAnim(ESequenceCharacter.Bicycle, "Comeback", 1);
         }
     }
-   
+    protected override void OnTrigger3()
+    {
+        base.OnTrigger3();
+        dialogueBox.SetActive(true);
+    }
     public override IEnumerator Rewind(SequenceContext ctx)
     {
+        dialogueBox.SetActive(false);
         transform.DOKill(false);
         transform.DOMove(originPos, 1);
         Animator.Play("Gardner-Idle");
