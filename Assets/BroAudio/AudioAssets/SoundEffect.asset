@@ -69,6 +69,34 @@ MonoBehaviour:
       BPM: 0
       Beats: 0
     SnapToFullVolume: 0
+  - <Name>k__BackingField: lightEffect
+    <ID>k__BackingField: 1073741847
+    MulticlipsPlayMode: 0
+    _group: {fileID: 0}
+    Clips:
+    - AudioClip: {fileID: 8300000, guid: 25618cd7c0001de428c72357b95978c0, type: 3}
+      Volume: 1
+      Delay: 0
+      StartPosition: 0.972
+      EndPosition: 0.773
+      FadeIn: 0.13
+      FadeOut: 0.423
+      Weight: 0
+    <MasterVolume>k__BackingField: 1
+    <Loop>k__BackingField: 0
+    <SeamlessLoop>k__BackingField: 0
+    <TransitionTime>k__BackingField: 0
+    <SpatialSetting>k__BackingField: {fileID: 0}
+    <Priority>k__BackingField: 128
+    <Pitch>k__BackingField: 1
+    <PitchRandomRange>k__BackingField: 0
+    <VolumeRandomRange>k__BackingField: 0
+    <RandomFlags>k__BackingField: 0
+    SeamlessTransitionType: 0
+    TransitionTempo:
+      BPM: 0
+      Beats: 0
+    SnapToFullVolume: 0
   Group: {fileID: 0}
   <AssetName>k__BackingField: SoundEffect
-  _assetGUID: 
+  _assetGUID: 30824de5dcc0f5f4fb11ae3ad1d2ab79
