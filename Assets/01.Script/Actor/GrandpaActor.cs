@@ -14,6 +14,8 @@ public class GrandpaActor : SequenceActorBase
     {
         bool clearEnabled = ctx.HasFlag(CaretakerActor.FLAG_CLEAR_ENABLED);
 
+
+
         if (clearEnabled)
         {
             Debug.Log("할아버지: 날아다니는 비둘기에게 과자 주기");
@@ -33,6 +35,13 @@ public class GrandpaActor : SequenceActorBase
             // TODO: 신문 보기 애니
             Animator.Play("GrandFather-OpenPaper");
             yield return new WaitForSeconds(newspaperDuration);
+        }
+
+        bool hasNextCard = ctx.HasFlag(BicycleActor.FLAG_GONE);
+        if (hasNextCard)
+        {
+            Debug.Log("자전거: 돌아오기");
+            sequenceManager.ChangeAnim(ESequenceCharacter.Bicycle, "Comeback", 1);
         }
     }
 

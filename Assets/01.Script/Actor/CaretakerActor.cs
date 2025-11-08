@@ -55,16 +55,22 @@ public class CaretakerActor : SequenceActorBase
             // 비둘기보다 먼저 실행 → 똥 피하기
             Animator.Play("Gardner-Move");
             Debug.Log("관리인: 비둘기보다 먼저 → Move");
-            transform.DOMove(goPos.position,moveDuration/2);
+            transform.DOMove(goPos.position,moveDuration/2).SetEase(Ease.InQuad);
             yield return new WaitForSeconds(moveDuration);
             Animator.Play("Gardner-Idle");
+        }
+        bool hasNextCard = ctx.HasFlag(BicycleActor.FLAG_GONE);
+        if (hasNextCard)
+        {
+            Debug.Log("자전거: 돌아오기");
+            sequenceManager.ChangeAnim(ESequenceCharacter.Bicycle, "Comeback", 1);
         }
     }
    
     public override IEnumerator Rewind(SequenceContext ctx)
     {
         transform.DOKill(false);
-        transform.DOMove(originPos, moveDuration / 2);
+        transform.DOMove(originPos, 1);
         Animator.Play("Gardner-Idle");
         yield break;
     }
