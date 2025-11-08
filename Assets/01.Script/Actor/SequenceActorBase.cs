@@ -5,13 +5,12 @@ using UnityEngine;
 public abstract class SequenceActorBase : MonoBehaviour
 {
     [SerializeField] protected SequenceManager sequenceManager;
-    public Animator Animator { get; set; }
+    [field:SerializeField]public Animator Animator { get; set; }
 
     public ESequenceCharacter characterId;
 
     protected virtual void Awake()
     {
-        Animator = GetComponentInChildren<Animator>();
     }
     /// <summary>정방향 실행 (선택 순서대로 호출)</summary>
     public abstract IEnumerator Execute(SequenceContext ctx);

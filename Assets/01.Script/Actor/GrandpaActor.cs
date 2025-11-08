@@ -4,7 +4,7 @@ using UnityEngine;
 public class GrandpaActor : SequenceActorBase
 {
     private float snackDuration = 2f;
-    [SerializeField] private float pigeonSnackDur = 1f;
+    private float pigeonSnackDur = 3f;
     [SerializeField] private float newspaperDuration = 1f;
 
     // 할아버지가 과자 주기까지 성공했다는 플래그
@@ -24,8 +24,6 @@ public class GrandpaActor : SequenceActorBase
             Debug.Log("비둘기: 과자 먹으러 내려오기");
             // TODO: 내려오는 애니/타임라인
             sequenceManager.ChangeAnim(ESequenceCharacter.Pigeon, "FlyingPark", 2);
-            yield return new WaitForSeconds(pigeonSnackDur);
-            sequenceManager.ChangeAnim(ESequenceCharacter.Pigeon, "Eat");
 
             ctx.SetFlag(FLAG_GRANDPA_SNACK_DONE);
         }

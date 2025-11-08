@@ -115,16 +115,20 @@
         transform.DOKill(); // 이 트랜스폼에 걸린 모든 트윈 정리
 
         // 3) "현재 위치"에서 eatPos까지 부드럽게 이동
-        transform.DOMove(eatPos.position, 2f).SetEase(Ease.OutQuad);
+        Animator.Play("Run");
+        transform.DOMove(eatPos.position, 2f).SetEase(Ease.OutQuad).OnComplete(()=>
+        {
+            Animator.Play("Eat");
+        });
     }
 
     public override IEnumerator Rewind(SequenceContext ctx)
-        {
-            // 리와인드 시에도 혹시 남아있을 flyTween 정리
-            if (flyTween != null && flyTween.IsActive())
-                flyTween.Kill();
+    {
+        // 리와인드 시에도 혹시 남아있을 flyTween 정리
+        if (DOTween.IsTweening(transform))
+            flyTween.Kill();
 
-            transform.DOMove(originPos, 0.2f);
-            return base.Rewind(ctx);
-        }
+        transform.DOMove(originPos, 0.2f);
+        return base.Rewind(ctx);
     }
+}

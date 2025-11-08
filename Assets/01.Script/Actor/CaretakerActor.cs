@@ -10,12 +10,12 @@ public class CaretakerActor : SequenceActorBase
     [SerializeField] private float moveDuration = 1f;
     [SerializeField] private Transform goPos;
     [SerializeField] private Transform attackPos;
-    private Transform originPos;
+    private Vector3 originPos;
     public const string FLAG_CLEAR_ENABLED = "ClearEnabledByPigeon"; // 이후에 할아버지가 있는지
     protected override void Awake()
     {
         base.Awake();
-        originPos = transform;
+        originPos = transform.position;
     }
     public override IEnumerator Execute(SequenceContext ctx)
     {
@@ -40,12 +40,12 @@ public class CaretakerActor : SequenceActorBase
             yield return new WaitForSeconds(hitDuration);
             transform.DOMove(attackPos.position, 0.2f);
 
-            yield return new WaitForSeconds(angryDuration);
+            yield return new WaitForSeconds(angryDuration/2);
+            sequenceManager.ChangeAnim(ESequenceCharacter.Pigeon, "Hit");
+            yield return new WaitForSeconds(angryDuration/2);
             Animator.Play("Gardner-Idle");
 
             Debug.Log("비둘기: 물 맞음");
-            sequenceManager.ChangeAnim(ESequenceCharacter.Pigeon,"Hit");
-            yield return new WaitForSeconds(hitDuration);
             sequenceManager.ChangeAnim(ESequenceCharacter.Pigeon,"FlyingPark",1);
             yield return new WaitForSeconds(3f);
             ctx.SetFlag(FLAG_CLEAR_ENABLED);
@@ -63,7 +63,8 @@ public class CaretakerActor : SequenceActorBase
    
     public override IEnumerator Rewind(SequenceContext ctx)
     {
-        transform.DOMove(originPos.position, moveDuration / 2);
+        transform.DOKill(false);
+        transform.DOMove(originPos, moveDuration / 2);
         Animator.Play("Gardner-Idle");
         yield break;
     }

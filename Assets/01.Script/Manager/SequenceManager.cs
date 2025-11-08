@@ -3,11 +3,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class SequenceManager : MonoBehaviour
 {
     [Header("선택 관련")]
     [SerializeField] private int maxSelectCount = 5;
+    [SerializeField] private PlayableAsset startDirector;
+    [SerializeField] private PlayableAsset cleardirector;
+    [SerializeField] private PlayableDirector director;
 
     [Header("이번 스테이지에 등장하는 액터들")]
     [SerializeField] private List<SequenceActorBase> actors = new();
@@ -99,18 +103,10 @@ public class SequenceManager : MonoBehaviour
             return;
         }
 
-        // 코루틴 안에서 안전하게 쓰려고 복사본 생성
-        foreach(CharacterBtn outlinable in selectedButtons)
-        {
-            outlinable.outlinable.enabled = false;
-        }
-
         var orderCopy = new List<ESequenceCharacter>(selectedOrder);
         inGameEvent?.RaiseEvent(new ComeDownCardUIEvent().Initialize());
         StartCoroutine(RunSequence(orderCopy));
 
-        // 선택 상태 리셋
-        ResetSelectionUI();
     }
 
     public void ResetSelection()
@@ -131,7 +127,10 @@ public class SequenceManager : MonoBehaviour
             if (btn != null)
                 btn.OnDeselected();
         }
-
+        foreach (CharacterBtn outlinable in selectedButtons)
+        {
+            outlinable.outlinable.enabled = false;
+        }
         selectedButtons.Clear();
         selectedOrder.Clear();
     }
@@ -167,18 +166,35 @@ public class SequenceManager : MonoBehaviour
             }
 
             yield return StartCoroutine(actor.Execute(ctx));
+            yield return new WaitForSeconds(1.5f);
         }
-        if (IsClear) yield break;
+        if (IsClear)
+        {
+            director.playableAsset = cleardirector;
+            director.Play();
+            director.stopped += Clear;
+            yield break;
+        }
         Debug.Log("정방향 시퀀스 끝!");
-
         // 리와인드가 필요 없으면 이 부분 빼도 됨
+        yield return new WaitForSeconds(2f);
         yield return StartCoroutine(RewindAll(ctx));
         inGameEvent?.RaiseEvent(new ComeUpCardUIEvent().Initialize());
         Debug.Log("리와인드까지 끝!");
+
+        // 선택 상태 리셋
+        ResetSelectionUI();
+    }
+
+    public void Clear(PlayableDirector director)
+    {
+        director.stopped -= Clear;
+        inGameEvent?.RaiseEvent(new ClearGameEvent().Initialize());
     }
 
     private IEnumerator RewindAll(SequenceContext ctx)
     {
+        
         for (int i = executedActors.Count - 1; i >= 0; i--)
         {
             var actor = executedActors[i];
@@ -195,6 +211,5 @@ public class SequenceManager : MonoBehaviour
     {
         Debug.Log("SequenceManager: 클리어 발생");
         IsClear = true;
-        inGameEvent?.RaiseEvent(new ClearGameEvent().Initialize());
     }
 }
