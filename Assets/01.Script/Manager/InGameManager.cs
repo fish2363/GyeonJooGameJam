@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using DG.Tweening;
+using Ami.BroAudio;
 
 public class InGameManager : MonoBehaviour
 {
@@ -11,30 +12,48 @@ public class InGameManager : MonoBehaviour
     [SerializeField] private Ease cinemaEase;
     [SerializeField] private float cardUiSpeed=0.2f;
     [SerializeField] private float cinemaUISpeed=0.2f;
+    [SerializeField] private GameObject blockPanel;
+
+    [SerializeField] private Ami.BroAudio.SoundID stage1Bgm;
 
     void Awake()
     {
         inGameEvent.AddListener<ComeUpCardUIEvent>(HandleGameStart);
         inGameEvent.AddListener<ComeDownCardUIEvent>(HandleGameEnd);
-
-        inGameEvent.RaiseEvent(new ComeUpCardUIEvent().Initialize());
+        inGameEvent.AddListener<ComeDownCinemaUIEvent>(HandleComeDownCinemaUI);
+        inGameEvent.AddListener<ComeUpCinemaUIEvent>(HandleComeUpCinemaUI);
+        BroAudio.Stop(BroAudioType.Music);
+        BroAudio.Play(stage1Bgm);
     }
+
+    private void HandleComeUpCinemaUI(ComeUpCinemaUIEvent obj)
+    {
+        blockPanel.SetActive(false);
+        _cinemaUI.DOScale(1.3f, cinemaUISpeed).SetEase(cinemaEase);
+    }
+
+    private void HandleComeDownCinemaUI(ComeDownCinemaUIEvent obj)
+    {
+        blockPanel.SetActive(true);
+        _cinemaUI.DOScale(1f, cinemaUISpeed).SetEase(cinemaEase);
+    }
+
     private void OnDestroy()
     {
         inGameEvent.RemoveListener<ComeUpCardUIEvent>(HandleGameStart);
         inGameEvent.RemoveListener<ComeDownCardUIEvent>(HandleGameEnd);
+        inGameEvent.RemoveListener<ComeDownCinemaUIEvent>(HandleComeDownCinemaUI);
+        inGameEvent.RemoveListener<ComeUpCinemaUIEvent>(HandleComeUpCinemaUI);
     }
 
     private void HandleGameStart(ComeUpCardUIEvent obj)
     {
-        _cinemaUI.DOScale(1.3f,cinemaUISpeed).SetEase(cinemaEase);
         _cardUI.DOAnchorPosY(198f, cardUiSpeed).SetEase(cardUIEase);
         _cardUI.GetComponent<CanvasGroupCompo>().SetGroup(true);
     }
 
     private void HandleGameEnd(ComeDownCardUIEvent obj)
     {
-        _cinemaUI.DOScale(1f, cinemaUISpeed).SetEase(cinemaEase);
         _cardUI.DOAnchorPosY(-230f, cardUiSpeed).SetEase(cardUIEase);
         _cardUI.GetComponent<CanvasGroupCompo>().SetGroup(false);
     }
