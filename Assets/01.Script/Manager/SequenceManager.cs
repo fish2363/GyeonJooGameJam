@@ -3,10 +3,21 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Cinemachine;
 using UnityEngine.Playables;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 public class SequenceManager : MonoBehaviour
 {
+    [SerializeField] private Volume volume;
+
+    private FilmGrain filmGrain;
+    private ColorAdjustments colorAdjustments;
+
+    [SerializeField] private CinemachineCamera playCam;
+    [SerializeField] private CinemachineCamera readyCam;
+
     [Header("선택 관련")]
     [SerializeField] private int maxSelectCount = 5;
     [SerializeField] private PlayableAsset startDirector;
@@ -30,6 +41,9 @@ public class SequenceManager : MonoBehaviour
     // 이번 턴에 실제 실행된 액터들 (리와인드용)
     private readonly List<SequenceActorBase> executedActors = new();
 
+    private const int activeTruePriority = 2;
+    private const int activeFalsePriority = 1;
+
     private void Awake()
     {
         actorLookup = new Dictionary<ESequenceCharacter, SequenceActorBase>();
@@ -45,6 +59,15 @@ public class SequenceManager : MonoBehaviour
 
             actorLookup[actor.characterId] = actor;
         }
+
+        if (volume == null || volume.profile == null)
+        {
+            Debug.LogWarning("PostFXController: Volume이나 Volume Profile이 비어있음");
+            return;
+        }
+
+        volume.profile.TryGet(out filmGrain);
+        volume.profile.TryGet(out colorAdjustments);
     }
 
     public void ChangeAnim(ESequenceCharacter character,string animName,int actionNum=0)
@@ -99,7 +122,7 @@ public class SequenceManager : MonoBehaviour
         if (selectedOrder.Count != maxSelectCount)
         {
             Debug.LogWarning("선택 개수가 부족함");
-            MouseTextManager.Instance?.SpawnTextAtMouse("NONO");
+            MouseTextManager.Instance?.SpawnTextAtMouse("모든 버튼을 선택해주세요!");
             return;
         }
 
@@ -139,6 +162,8 @@ public class SequenceManager : MonoBehaviour
 
     private IEnumerator RunSequence(List<ESequenceCharacter> order)
     {
+        playCam.Priority = activeTruePriority;
+        readyCam.Priority = activeFalsePriority;
         var ctx = new SequenceContext(order, OnClear);
         var selectedButtons = new List<CharacterBtn>(this.selectedButtons);
 
@@ -167,6 +192,7 @@ public class SequenceManager : MonoBehaviour
 
             yield return StartCoroutine(actor.Execute(ctx));
             yield return new WaitForSeconds(1.5f);
+            
         }
         if (IsClear)
         {
@@ -194,16 +220,21 @@ public class SequenceManager : MonoBehaviour
 
     private IEnumerator RewindAll(SequenceContext ctx)
     {
-        
+        filmGrain.active = true;
+        colorAdjustments.active = true;
         for (int i = executedActors.Count - 1; i >= 0; i--)
         {
             var actor = executedActors[i];
             if (actor == null) continue;
 
             yield return StartCoroutine(actor.Rewind(ctx));
+            yield return new WaitForSeconds(1f);
         }
-
+        filmGrain.active = false;
+        colorAdjustments.active = false;
         executedActors.Clear();
+        playCam.Priority = activeFalsePriority;
+        readyCam.Priority = activeTruePriority;
         yield break;
     }
 

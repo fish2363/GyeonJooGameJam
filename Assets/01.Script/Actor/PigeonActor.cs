@@ -46,7 +46,12 @@
                 yield break;
             }
 
-            // 이후 행동(날아다니기 등)이 있다면 여기 이어서...
+            bool hasNextCard = ctx.HasFlag(BicycleActor.FLAG_GONE);
+            if (hasNextCard)
+            {
+                Debug.Log("자전거: 돌아오기");
+                sequenceManager.ChangeAnim(ESequenceCharacter.Bicycle, "Comeback", 1);
+            }
         }
 
     // 물 피해서 날아다니는 구간 시작
@@ -127,8 +132,8 @@
         // 리와인드 시에도 혹시 남아있을 flyTween 정리
         if (DOTween.IsTweening(transform))
             flyTween.Kill();
-
-        transform.DOMove(originPos, 0.2f);
+        Animator.Play("Idle");
+        transform.DOMove(originPos, 1f);
         return base.Rewind(ctx);
     }
 }

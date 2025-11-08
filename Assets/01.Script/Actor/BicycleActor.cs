@@ -11,8 +11,13 @@ public class BicycleActor : SequenceActorBase
     [SerializeField] private Transform comePos;
     [SerializeField] Outlinable outlinable;
 
+    public const string FLAG_GONE = "RiderGone";
+
+    SequenceContext _ctx;
+
     public override IEnumerator Execute(SequenceContext ctx)
     {
+        _ctx = ctx;
         int idxBicycle = ctx.GetIndex(ESequenceCharacter.Bicycle);
         bool hasNextCard = idxBicycle < ctx.Order.Count - 1;
 
@@ -22,27 +27,11 @@ public class BicycleActor : SequenceActorBase
         {
             GetComponent<SpriteRenderer>().DOFade(0, 0.2f);
             outlinable.enabled = false;
+            ctx.SetFlag(FLAG_GONE);
         });
 
         // TODO: 타임라인 / 애니
-        yield return new WaitForSeconds(rideOutDuration+2);
-
-
-        if (hasNextCard)
-        {
-            Debug.Log("자전거: 다음 카드가 있으므로 돌아오기");
-            Animator.Play("Comeback");
-            GetComponent<SpriteRenderer>().DOFade(1, 0.2f).OnComplete(() =>
-            {
-                transform.DOMove(comePos.position, rideOutDuration);
-                outlinable.enabled = true;
-            });
-
-            // TODO: 돌아오기 연출
-            yield return new WaitForSeconds(rideBackDuration);
-            Animator.Play("Idle");
-        }
-
+        yield return new WaitForSeconds(1f);
 
 
         // 4) 할아버지가 과자 주기까지 성공했는지 확인
@@ -58,7 +47,24 @@ public class BicycleActor : SequenceActorBase
 
         ctx.OnClear?.Invoke();
     }
+    protected override void OnTrigger()
+    {
+        base.OnTrigger();
+        StartCoroutine(Comeback());
+    }
 
+    private IEnumerator Comeback()
+    {
+        _ctx.RemoveFlag(FLAG_GONE);
+        GetComponent<SpriteRenderer>().DOFade(1, 0.2f).OnComplete(() =>
+        {
+            transform.DOMove(comePos.position, rideOutDuration);
+        });
+
+        // TODO: 돌아오기 연출
+        yield return new WaitForSeconds(rideBackDuration);
+        Animator.Play("Idle");
+    }
     public override IEnumerator Rewind(SequenceContext ctx)
     {
         // 필요하면 되감기 연출
